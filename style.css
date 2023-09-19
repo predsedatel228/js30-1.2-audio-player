@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.background {
+  background-image: url(./assets/images/lemonade.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+  display: flex;
+  backdrop-filter: blur(5px);
+}
+
+.player {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 17rem;
+  /* height: 20rem; */
+  border: 2px solid red;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: linear-gradient(to left, violet, red);
+}
+.song-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 0.5rem; */
+  justify-content: center;
+}
+.player__artist {
+  font-family: Roboto;
+  font-weight: 700;
+
+}
+.player__song-name{
+  font-family: Roboto;
+}
+.player__image {
+  width: 100%;
+  height: 250px;
+}
+
+.player__song {
+  width: 100%;
+  height: 2rem;
+}
+
+.player__play-button {
+  width: 60px;
+  height: 60px;
+  filter: invert();
+  cursor: pointer;
+
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.player__next-button {
+  width: 30px;
+  height: 30px;
+  filter: invert();
+  cursor: pointer;
+}
+
+.player__previous-button {
+  width: 30px;
+  height: 30px;
+  filter: invert(10);
+  cursor: pointer;
+}
+
+.control-container {
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 7%;
+
+}
